@@ -38,7 +38,7 @@
       <nav class="navbar">
         <a class="line" href="#blogg">OUR BLOG</a>
         <a class="line line1" href="#jr">OUR JOURNEY</a>
-        <a class="active" href="#contact">GET IN TOUCH</a>
+        <a class="active contact-btn" href="#contact">GET IN TOUCH</a>
       </nav>
       <i class="fas fa-bars" id="menu-bars"></i>
     </div>
@@ -1294,12 +1294,15 @@ fade($('.quoteLoop > .quote').first());
   gsap.set('#no02', { y: 50 });
   gsap.set('#no03', { y: 150 });
 
-  var boxWidth = 250,
+  var boxWidth = 250;
     totalWidth = boxWidth * 16,
     no01 = document.querySelectorAll("#no01 .box"),
     no03 = document.querySelectorAll("#no03 .box"),
     dirFromLeft = "+=" + totalWidth,
     dirFromRight = "-=" + totalWidth;
+
+
+ 
 
   var mod = gsap.utils.wrap(0, totalWidth);
 
