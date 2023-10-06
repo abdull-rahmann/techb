@@ -763,6 +763,7 @@ position: relative;
   .about-us .first-row .section-title h1 {
     font-size: 30px;
     margin-top: 20px;
+    text-align: center;
   }
   .about-us .maasai, .about-us .maasai {
    height: 30vh;
@@ -771,6 +772,7 @@ position: relative;
   .about-us .second-row .section-title h1 {
     font-size: 30px;
     margin-top: 20px;
+    text-align: center;
   }
   .about-us .bus{
    height: 30vh;
