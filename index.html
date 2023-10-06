@@ -1168,54 +1168,7 @@
   <script src="lib/wow/wow.min.js"></script>
   <script src="js/main.js"></script>
 
-  <!-- ABOUT US GSAP-->
-  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
-  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
-  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/MotionPathPlugin.min.js"></script>
-  <script src="https://assets.codepen.io/16327/GSDevTools3.min.js"></script>
-
-  <script>
-    //learn how this was made at https://www.youtube.com/watch?v=ersN5fk8py0 
-    gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin, MotionPathPlugin, GSDevTools);
-
-    gsap.defaults({ ease: "none" });
-
-    const pulses = gsap.timeline({
-      defaults: {
-        scale: 1.5,
-        autoAlpha: 1,
-        transformOrigin: 'center',
-        ease: "elastic(2.5, 1)"
-      }
-    })
-      .to(".ball02, .text01", {}, 0.84)
-      .to(".ball03, .text02", {}, 1.36)
-      .to(".ball04, .text03", {}, 1.92)
-      .to(".ball05, .text04", {}, 2.52)
-      .to(".ball06, .text05", {}, 3.16)
-    const main = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#svg",
-        scrub: true,
-        start: "top center",
-        end: "bottom center"
-      }
-    })
-      .to(".ball01", { autoAlpha: 1, duration: 0.05 })
-      .from(".theLine", { drawSVG: 0, duration: 4 }, 0)
-      .to(".ball01", {
-        motionPath: {
-          path: ".theLine",
-          align: ".theLine",
-          alignOrigin: [0.5, 0.5],
-        }, duration: 4
-      }, 0)
-      .add(pulses, 0)
-
-
-
-  </script>
+ 
 
 
   <!-- PRODUCTS GSAP -->
