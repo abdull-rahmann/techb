@@ -315,7 +315,7 @@ hr {
   transition: .4s ease-out;
 }
 
-.navigation .icons .active {
+.navigation .icons .contact-btn {
   background-color: var(--blue);
   color: #fff;
 
@@ -378,7 +378,9 @@ hr {
   padding: 0;
 }
 
-@media (max-width: 752px) {}
+@media (max-width: 752px) {
+
+}
 
 /* media queries  */
 
@@ -435,20 +437,16 @@ hr {
   margin: 0;
   /* Remove margin to eliminate horizontal spacing */
   font-size: 19px;
-  background: #eee;
+
   width: 100%;
   margin: auto;
   text-align: left;
 }
 
 .navigation .icons .active:hover {
-  background-color: #fff;
+ 
   color: #E8B620;
 }
-
-
-
-
 
 .navigation {
   padding: 0.3rem 3.5%;
@@ -480,10 +478,14 @@ hr {
 }
 
 .navigation .icons .active:hover {
-  background-color: #fff;
+  background-color: #000;
   color: #E8B620;
 }
 
+.navigation .icons .contact-btn:hover {
+  background-color: var(--orange);
+  color: #fff;
+}
 
 
 
@@ -757,7 +759,24 @@ position: relative;
   }
 
 }
+@media (max-width : 414px){
+  .about-us .first-row .section-title h1 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .about-us .maasai, .about-us .maasai {
+   height: 30vh;
 
+  }
+  .about-us .second-row .section-title h1 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .about-us .bus{
+   height: 30vh;
+  margin-top: 20px;
+  }
+}
 
 
 
@@ -878,7 +897,7 @@ position: relative;
   border-radius: 15px;
   padding: 20px;
   width: 60%;
-  height: 220px;
+  height: fit-content;
   bottom: 0;
   margin-bottom: -80px;
   left: 0;
@@ -1020,155 +1039,29 @@ position: relative;
   fill: #FFFFFF;
 }
 
+
+@media (max-width : 414px){
+  .digital-new .col1 .ui-tip-card {
+   height: fit-content;
+    width: 65%;
+    
+  }
+  .digital-new .dg-img {
+
+    width: 100%;
+    height: 55vh;
+  }
+  .digital-new .row .col2 {
+    padding-left: 0px;
+  }
+  .section-title hr{
+    display: none;
+  }
+}
+
 /************************** END OF DIGITAL SERVICES media queries**********************/
 
 
-/****************************** DIGITAL SERVICES ***************/
-.digital-services {
-
-  background-color: #333333;
-  background-attachment: fixed;
-  padding: 20px;
-  width: 100%;
-  margin: auto;
-}
-
-.digital-services .section-title {
-  padding-bottom: 5px;
-  margin-top: 27px;
-}
-
-.digital-container {
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 15px;
-  margin-top: 20px;
-}
-
-.digital-second {
-  margin-top: 0px;
-}
-
-.digital-card-main {
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-bottom: 0px;
-}
-
-.digital-card-main .row {
-  width: 60%;
-  margin: auto;
-  display: flex;
-  justify-content: start;
-  align-items: start;
-  margin: 10px;
-  margin-left: 0;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-.digital-card-main .container {
-  flex: none;
-  /* Prevent containers from growing */
-  width: fit-content;
-  /* Set a fixed width */
-  padding: 10px 25px;
-  text-align: center;
-  color: #fff;
-  width: 15px;
-  border-radius: 35px;
-}
-
-.digital-card-main .container1 {
-  background-color: #FF5733;
-  /* Change to your desired color */
-  width: fit-content;
-
-}
-
-.digital-card-main .container2 {
-  background-color: #3399FF;
-  /* Change to your desired color */
-  width: fit-content;
-}
-
-.digital-container .digital-card {
-  height: 280px;
-  width: 550px;
-
-
-  box-shadow: 5px 5px 20px black;
-  overflow: hidden;
-  position: relative;
-  border-radius: 15px;
-}
-
-.digital-container img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 3px;
-  transition: transform 0.5s;
-  border-radius: 15px;
-}
-
-.intro {
-  height: 70px;
-  width: 100%;
-  padding-left: 6px;
-  box-sizing: border-box;
-  position: absolute;
-  background: rgba(27, 27, 27, 0.5);
-  color: #fff;
-  bottom: -10px;
-  transition: .5s;
-}
-
-.digital-container h1 {
-  margin: 10px;
-  font-size: 27px;
-  color: #fff;
-  font-weight: 400;
-  font-family: 'Raleway', sans-serif;
-}
-
-.digital-container p {
-  margin: 10px;
-  font-size: 14px;
-  margin-bottom: 0;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.5s;
-
-  font-family: 'Raleway', sans-serif;
-
-}
-
-.digital-container span {
-  font-weight: bold;
-
-}
-
-.digital-container .digital-card:hover {
-  cursor: pointer;
-}
-
-.digital-container .digital-card:hover .intro {
-  bottom: 0;
-  bottom: 0px;
-  height: 120px;
-}
-
-.digital-container .digital-card:hover p {
-  opacity: 1;
-  visibility: visible;
-}
-
-.digital-container .digital-card:hover img {
-  transform: scale(1.1) rotate(-3deg);
-}
 
 
 
@@ -1240,10 +1133,14 @@ video {
   background-color: #0DB4D7;
   background-image: url("images/Cloud\ and\ AI.png");
   background-size: cover;
-  background-attachment: fixed;
+
   border-radius: 15px;
 }
-
+@media (min-width: 768px){
+ .cloud-banner{
+  background-attachment: fixed;
+ }
+}
 
 .clouds {
   position: absolute;
@@ -1432,7 +1329,11 @@ video {
   }
 }
 
-
+@media (max-width : 414px){
+  .cloud-banner{
+    min-height: 20vh;
+  }
+}
 
 /********************************** RESOURCE AUGMENTATION & DEV OPS ***************************/
 /* shape fill Top*/
@@ -2127,7 +2028,12 @@ blockquote cite {
 }
 
 
-
+@media (max-width: 414px){
+  .technologies .wrapper .box {
+    width: 100px;
+    height: 80px;
+  }
+}
 
 
 
